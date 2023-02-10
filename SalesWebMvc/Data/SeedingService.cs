@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using SalesWebMvc.Models;
 using SalesWebMvc.Models.Enums;
 
+
 namespace SalesWebMvc.Data
 {
     public class SeedingService
@@ -30,7 +31,7 @@ namespace SalesWebMvc.Data
             Department d4 = new Department(3, "Books");
 
             Seller s1 = new Seller(1, "Bob Brown", "bob@gmail.com", new DateTime(1999, 4, 21), 1000.0, d1);
-            Seller s2 = new Seller(2, "Maria Green", "maria@gmail.com", new DateTime(1979, 12, 31), 3500.0, d2);
+            Seller s2 = new Seller(2, "Maria Green", "maria@gmail.com", new DateTime(1957, 12, 31), 3500.0, d2);
             Seller s3 = new Seller(3, "Marcio Grey", "alex@gmail.com", new DateTime(1988, 7, 1), 2200.0, d1);
             Seller s4 = new Seller(4, "Natalia White", "natalia@gmail.com", new DateTime(1988, 1, 29), 3000.0, d4);
             Seller s5 = new Seller(5, "Vinicius Brown", "vinicius@gmail.com", new DateTime(1995, 5, 25), 4000.0, d3);
@@ -60,7 +61,7 @@ namespace SalesWebMvc.Data
             SalesRecord r22 = new SalesRecord(22, new DateTime(2023, 04, 24), 4000.0, SaleStatus.Billed, s4);
             SalesRecord r23 = new SalesRecord(23, new DateTime(2023, 04, 19), 11000.0, SaleStatus.Canceled, s2);
             SalesRecord r24 = new SalesRecord(24, new DateTime(2023, 04, 12), 8000.0, SaleStatus.Billed, s5);
-            SalesRecord r25 = new SalesRecord(25, new DateTime(2023, 04, 31), 7000.0, SaleStatus.Billed, s3);
+            SalesRecord r25 = new SalesRecord(25, new DateTime(2023, 04, 30), 7000.0, SaleStatus.Billed, s3);
             SalesRecord r26 = new SalesRecord(26, new DateTime(2023, 04, 6), 5000.0, SaleStatus.Billed, s4);
             SalesRecord r27 = new SalesRecord(27, new DateTime(2023, 04, 13), 9000.0, SaleStatus.Pending, s1);
             SalesRecord r28 = new SalesRecord(28, new DateTime(2023, 04, 7), 4000.0, SaleStatus.Billed, s3);
@@ -78,7 +79,7 @@ namespace SalesWebMvc.Data
 
             _context.SaveChangesAsync();
 
-            
+
         }
     }
 }
