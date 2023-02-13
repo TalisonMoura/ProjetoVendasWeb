@@ -46,7 +46,7 @@ namespace SalesWebMvc
             services.AddScoped<DepartmentService>();
             services.AddScoped<SalesRecordService>();
         }
-         
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
@@ -57,7 +57,7 @@ namespace SalesWebMvc
                 SupportedCultures = new List<CultureInfo> { enUs },
                 SupportedUICultures = new List<CultureInfo> { enUs }
             };
-            
+
             app.UseRequestLocalization(localizationOptions);
 
             if (env.IsDevelopment())
